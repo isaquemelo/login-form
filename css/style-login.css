@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/* Isaque Brasileiro: Front-End - isaquegbmelo2@gmail.com */
+/* Edgar Miguel: Design - edigar@wadgroup.com.br*/
+
+/*RESET*/
+body,html{height:100%;min-height:100%}body{overflow-x:hidden;webkit-animation:bugfix infinite 1s}@-webkit-keyframes bugfix{from,to{padding:0}}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}table{border-collapse:collapse;border-spacing:0}*{border:0;box-sizing:border-box;margin:0;moz-box-sizing:border-box;outline:0!important;padding:0;webkit-box-sizing:border-box;webkit-focus-ring-color:transparent!important;webkit-tap-highlight-color:transparent!important}html{font-size:1em;ms-text-size-adjust:1em;webkit-text-size-adjust:1em}body{vertical-align:baseline}button,html,input,select,textarea{font-family:inherit;}
+
+
+/*INITIAL CSS*/
+
+body{
+	background-color: #1A1818;
+	width: 100%;
+	height: 100%;
+}
+
+
+#logo{
+	width: 84px;
+	height:79px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#container-login{
+	width: 261px;
+	height: 420px;
+	position:absolute; 
+    top:50%; 
+    left: 50%;
+    margin-top:-210px;
+    margin-left: -130.5px;
+    overflow: hidden;
+	
+}
+
+#block-login{
+	width: 260px;
+	height: 240px;
+	background-color: #EFEFEF;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-ms-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	padding-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	
+	-moz-box-shadow: 1px 18px 30px -11px #000;
+	-webkit-box-shadow: 1px 18px 30px -11px #000;
+	box-shadow: 1px 18px 30px -11px #000;
+
+}
+
+#block-login img {
+	width: 62px;
+	height: 62px;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	-ms-border-radius:100%;
+	-o-border-radius:100%;
+	border-radius:100%;
+	border: 2px solid #D3D2D2;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+}
+
+/*FORM STYLES*/
+form {
+	display: block;
+}
+.input-class{
+	width: 205px;
+	height: 33px;
+	background-color:#CFCFCF;
+	color: rgba(0,0,0,0.50);
+	font-family: Tahoma;
+	font-size: 14px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	text-align: center;
+	margin-bottom: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	-webkit-box-shadow: inset 0px -1px 0.30px 0.30px rgba(50, 50, 50, 0.07);
+	-moz-box-shadow:    inset 0px -1px 0.30px 0.30px rgba(50, 50, 50, 0.07);
+	box-shadow:         inset 0px -1px 0.30px 0.30px rgba(50, 50, 50, 0.07);
+
+
+}
+
+.button-class{
+	width:205px;
+	height: 33px;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	font-family:Fjalla One;
+	text-transform:uppercase;
+	font-size: 13px;
+	color: white;
+	background: #141212; 
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE0MTIxMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjAyMDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #141212 0%, #020202 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#141212), color-stop(100%,#020202)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #141212 0%,#020202 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #141212 0%,#020202 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #141212 0%,#020202 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #141212 0%,#020202 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141212', endColorstr='#020202',GradientType=0 ); /* IE6-8 */
+
+}
+
+.button-class:active{
+	-webkit-animation:fadeOut 700ms linear;
+	-moz-animation:fadeOut 700ms linear;
+	-ms-animation:fadeOut 700ms linear;
+	-o-animation:fadeOut 700ms linear;
+	animation:fadeOut 700ms linear;
+	background: #201f1f;
+}
+
+#txt-btt{
+	width: 261px;
+	height: 12px;
+	display: block;
+	font-family: Fjalla One;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgba(255,255,255,0.13);
+	padding-top: 50px;
+	word-spacing: 3px;
+
+}
+
+#txt-btt .txt-right a{
+	font-size: 12px;
+	color: rgba(255,255,255,0.13);
+	text-decoration: none;
+	display: block;
+	position:absolute;
+	right:0px;
+}
+#txt-btt .txt-left a {
+	font-size: 12px;
+	color: rgba(255,255,255,0.13);
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	float: left;
+
+}
+
+.input-class:focus{
+  
+
+    border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow:inset 0 2px 2px rgba(163,163,163,.030),0 0 6px rgba(72,72,72,.6);
+	-moz-box-shadow:inset 0 2px 2px rgba(163,163,163,.030),0 0 6px rgba(72,72,72,.6);
+	box-shadow:inset 0 2px 2px rgba(163,163,163,.030),0 0 6px rgba(72,72,72,.6);
+
+
+
+
+    
+}
+
+#txt-btt .txt-right a:hover{
+	color: #f1f1f1;
+	-webkit-animation:fadeIn 700ms linear;
+	-moz-animation:fadeIn 700ms linear;
+	-ms-animation:fadeIn 700ms linear;
+	-o-animation:fadeIn 700ms linear;
+	animation:fadeIn 700ms linear;
+}
+#txt-btt .txt-left a:hover {
+	color: #f1f1f1;
+	-webkit-animation:fadeIn 700ms linear;
+	-moz-animation:fadeIn 700ms linear;
+	-ms-animation:fadeIn 700ms linear;
+	-o-animation:fadeIn 700ms linear;
+	animation:fadeIn 700ms linear;
+
+}
+
+@-webkit-keyframes fadeIn {
+	  0% {
+	    opacity: 0;
+	  }
+	
+	  100% {
+	    opacity: 1;
+	  }
+	}
+	
+	@keyframes fadeIn {
+	  0% {
+	    opacity: 0;
+	  }
+	
+	  100% {
+	    opacity: 1;
+	  }
+	}
+	
+
